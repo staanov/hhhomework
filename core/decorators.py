@@ -7,4 +7,4 @@ def cache_decorator(func):
         if args not in cache:
             cache[args] = func(*args)
         return cache
-    return inner_func()
+    return inner_func
